@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Twitter-Shop · X / Twitter 运营干货</title>
+    <link>https://twitter-zhanghao.top/</link>
+    <description>覆盖 X/Twitter 冻结解封、Token 登录、2FA、安全养号与蓝标认证的实用教程。</description>
+    <language>zh-CN</language>
+    <item>
+      <title>X (Twitter) 新号防封指南：如何安全使用 Token 登录？</title>
+      <link>https://twitter-zhanghao.top/blog/x-safety-guide.html</link>
+      <guid>https://twitter-zhanghao.top/blog/x-safety-guide.html</guid>
+    </item>
+    <item>
+      <title>X (Twitter) 账号被冻结怎么办？2025 最新申诉解封教程</title>
+      <link>https://twitter-zhanghao.top/blog/x-unlock-guide.html</link>
+      <guid>https://twitter-zhanghao.top/blog/x-unlock-guide.html</guid>
+    </item>
+    <item>
+      <title>X Premium (Twitter Blue) 蓝标认证值得买吗？权益深度解析</title>
+      <link>https://twitter-zhanghao.top/blog/x-premium-review.html</link>
+      <guid>https://twitter-zhanghao.top/blog/x-premium-review.html</guid>
+    </item>
+    <item>
+      <title>X / 推特 Token 登录脚本：CT0/Auth 实操与最佳实践</title>
+      <link>https://twitter-zhanghao.top/blog/x-token-login-script.html</link>
+      <guid>https://twitter-zhanghao.top/blog/x-token-login-script.html</guid>
+    </item>
+    <item>
+      <title>2FA 绑定与备用码：X 账号安全加固全流程</title>
+      <link>https://twitter-zhanghao.top/blog/x-2fa-binding.html</link>
+      <guid>https://twitter-zhanghao.top/blog/x-2fa-binding.html</guid>
+    </item>
+    <item>
+      <title>X 新号养号日历：首登 7 天稳步运营计划</title>
+      <link>https://twitter-zhanghao.top/blog/x-warmup-calendar.html</link>
+      <guid>https://twitter-zhanghao.top/blog/x-warmup-calendar.html</guid>
+    </item>
+  </channel>
+</rss>
