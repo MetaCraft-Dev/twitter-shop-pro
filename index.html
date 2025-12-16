@@ -20,6 +20,14 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:image" content="https://twitter-zhanghao.top/og-cover.svg">
 <script src="https://cdn.tailwindcss.com"></script>
+<style>
+.btn-cta{position:relative;overflow:hidden;cursor:pointer;transition:transform 250ms ease-in-out,filter 250ms ease-in-out;will-change:transform}
+.btn-cta::before{content:"";position:absolute;inset:-1px;background:linear-gradient(120deg,rgba(255,255,255,.18),rgba(255,255,255,0));transform:translateX(-35%);opacity:0;transition:transform 250ms ease-in-out,opacity 250ms ease-in-out;pointer-events:none}
+.btn-cta:hover{transform:translateY(-1px) scale(1.05);filter:brightness(1.05) saturate(1.05)}
+.btn-cta:hover::before{opacity:.5;transform:translateX(0)}
+.btn-cta:active{transform:scale(.97);filter:brightness(.95)}
+@media (prefers-reduced-motion: reduce){.btn-cta,.btn-cta::before{transition:none}}
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -248,7 +256,7 @@
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-2xl md:text-3xl font-bold text-white">X (Twitter) 账号价格表</h2>
       <div class="mt-6 grid md:grid-cols-3 gap-6">
-        <article class="relative rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-6 hover:shadow-emerald-500/20">
+        <article class="group relative rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-6 hover:shadow-emerald-500/20 hover:bg-white/10 hover:border-emerald-400/30 hover:ring-2 hover:ring-emerald-300/20 transform-gpu transition-colors transition-shadow transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01] active:scale-[0.99] focus-within:ring-2 focus-within:ring-emerald-300/30">
           <div class="flex items-center justify-between">
             <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-400/30">🔥 入门首选</span>
             <span class="text-white font-bold">¥19.90 起</span>
@@ -261,7 +269,7 @@
           </ul>
           <a class="btn-cta relative overflow-hidden mt-6 inline-flex w-full justify-center items-center px-4 py-2 rounded-xl bg-emerald-500 text-slate-900 font-semibold shadow-lg shadow-emerald-500/20 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-emerald-300/50 transition-transform" href="/go/buy" rel="nofollow sponsored">🚀 立即抢购</a>
         </article>
-        <article class="relative rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-6 hover:shadow-cyan-500/20">
+        <article class="group relative rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-6 hover:shadow-cyan-500/20 hover:bg-white/10 hover:border-cyan-400/30 hover:ring-2 hover:ring-cyan-300/20 transform-gpu transition-colors transition-shadow transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01] active:scale-[0.99] focus-within:ring-2 focus-within:ring-cyan-300/30">
           <div class="flex items-center justify-between">
             <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-400/30">💎 运营首选</span>
             <span class="text-white font-bold">¥35.00 起</span>
@@ -274,7 +282,7 @@
           </ul>
           <a class="btn-cta relative overflow-hidden mt-6 inline-flex w-full justify-center items-center px-4 py-2 rounded-xl bg-cyan-400 text-slate-900 font-semibold shadow-lg shadow-emerald-500/20 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cyan-300/50 transition-transform" href="/go/buy" rel="nofollow sponsored">⚡️ 查看详情</a>
         </article>
-        <article class="relative rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-6 hover:shadow-purple-500/20">
+        <article class="group relative rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-6 hover:shadow-purple-500/20 hover:bg-white/10 hover:border-purple-400/30 hover:ring-2 hover:ring-purple-300/20 transform-gpu transition-colors transition-shadow transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01] active:scale-[0.99] focus-within:ring-2 focus-within:ring-purple-300/30">
           <div class="flex items-center justify-between">
             <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-400/30">🌟 尊贵身份</span>
             <span class="text-white font-bold">实时询价</span>
@@ -585,12 +593,12 @@ document.querySelectorAll('a.btn-cta').forEach(function(el){
     var s=document.createElement('span');
     s.style.position='absolute';s.style.left=x+'px';s.style.top=y+'px';
     s.style.width=size+'px';s.style.height=size+'px';s.style.borderRadius='9999px';
-    s.style.background='rgba(255,255,255,0.6)';s.style.pointerEvents='none';
+    s.style.background='rgba(255,255,255,0.5)';s.style.pointerEvents='none';
     s.style.transform='scale(0)';s.style.opacity='0.6';
-    s.style.transition='transform 500ms ease, opacity 700ms ease';
+    s.style.transition='transform 300ms ease-in-out, opacity 300ms ease-in-out';
     el.appendChild(s);
     requestAnimationFrame(function(){s.style.transform='scale(1)';s.style.opacity='0';});
-    setTimeout(function(){s.remove();},700);
+    setTimeout(function(){s.remove();},320);
   });
 });
 </script>
