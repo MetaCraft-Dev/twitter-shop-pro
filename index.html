@@ -25,15 +25,62 @@
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Twitter Token Account",
+  "image": [
+    "https://twitter-zhanghao.top/og-cover.svg",
+    "https://twitter-zhanghao.top/logo.svg"
+  ],
   "description": "支持 CT0/Auth Token 直登，适合自动化批量登录与稳定运营场景。交付包含账号、密码、绑定邮箱信息、2FA 密钥与备用码。",
-  "brand": {"@type": "Brand", "name": "Twitter-Shop"},
-  "category": "SocialMediaAccount",
+  "sku": "TW-TOKEN-001",
+  "mpn": "TW-TOKEN-001",
+  "brand": {
+    "@type": "Brand",
+    "name": "Twitter-Shop"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Customer"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "186"
+  },
   "offers": {
     "@type": "Offer",
-    "price": "19.90",
+    "url": "https://twitter-zhanghao.top/go/buy",
     "priceCurrency": "CNY",
+    "price": "19.90",
+    "priceValidUntil": "2026-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "/go/buy"
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "CNY"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "CN"
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "CN",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 3,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    }
   }
 }
 </script>
